@@ -6,9 +6,14 @@ const pokemon = require('./models/pokemon.js')
 
 
 // home route
-app.get('/pokemon', (req, res)=>{
+app.get('/', (req, res)=>{
 // displays pokemon array on homepage
 	res.send(pokemon)
+})
+
+// pokemon route
+app.get('/pokemon', (req, res)=>{
+	res.render('index.ejs', {pokemon: pokemon})
 })
 
 

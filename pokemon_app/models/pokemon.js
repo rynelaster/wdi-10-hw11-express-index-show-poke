@@ -14,3 +14,5 @@ const pokemon = [
 
 	{name: "Wartortle", img: "http://img.pokemondb.net/artwork/wartortle.jpg"}
 ];
+
+module.exports = pokemon;
